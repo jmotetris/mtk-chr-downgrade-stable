@@ -28,7 +28,7 @@
         commands:
            - /system package update install ignore-missing=yes
       when: output.stdout is search('available')
-    - name: System Reboot
-      routeros_command:
-        commands:
-           - :execute {/system package downgrade;}
+#    - name: System Reboot
+#      routeros_command:
+#        commands:
+#           - :execute {/system package downgrade;}
